@@ -1,20 +1,10 @@
-package com.company;
+package com.company.lab1;
 
 import java.util.Arrays;
-import java.util.Scanner;
 
-public class Main {
+public class Task1 {
 
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.print("Enter the height of triangle from 1 to 9: ");
-        int height = in.nextInt();
-
-        int[][] tr = triangle(height);
-        System.out.println(triangleToString(tr));
-    }
-
-    public static int[] rowNums(int row) {
+    private static int[] rowNums(int row) {
         int rowSize = row * 2 + 1;
         int middle = row + 1;
         int[] nums = new int[rowSize];

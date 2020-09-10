@@ -1,21 +1,8 @@
-package com.company;
+package com.company.lab1;
 
 import java.util.Random;
-import java.util.Scanner;
 
-public class task2 {
-
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.print("Enter the size of matrix: ");
-        int n = in.nextInt();
-
-        int[][] defaultMatrix = randomMatrix(n);
-        printMatrix(defaultMatrix);
-        System.out.println();
-        printMatrix(turnMatrix(defaultMatrix));
-    }
-
+public class Task2 {
 
     public static int[][] randomMatrix (int n) {
 
@@ -37,11 +24,11 @@ public class task2 {
             for (int j = 0; j < matrix[i].length; j++) {
                 newMatrix[matrix[i].length - j - 1][i] = matrix[i][j];
             }
-            
+
         }
         return newMatrix;
     }
-    
+
     public static void printMatrix(int [][] matrix){
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
@@ -51,3 +38,4 @@ public class task2 {
         }
     }
 }
+
